@@ -12,14 +12,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="main-container inter-text">
       <nav>
-        <a href="#">Головна</a>
-        <a href="#">Проекти</a>
-        <a href="#">Про мене</a>
-        <a href="#">Контакти</a>
+        <a href="#hero">Головна</a>
+        <a href="#projects">Проекти</a>
+        <a href="#about">Про мене</a>
+        <a href="#contact">Контакти</a>
       </nav>
       <main>
         <section id="hero" class="main-section">
@@ -51,6 +52,7 @@
               <a
                 href="https://github.com/achupylko/portfolio-site"
                 target="_blank"
+                class="badge"
                 >Переглянути код</a
               >
             </div>
@@ -107,6 +109,22 @@
           <div class="contact-container">
             <h2 class="inter-title">Зв’язатися зі мною</h2>
             <p>Хочеш співпрацювати або маєш запитання? Напиши мені 👇</p>
+            <form id="contact-form">
+              <label for="name">Ім’я</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Повідомлення</label>
+              <textarea id="message" name="message" rows="5" required></textarea
+              >
+
+              <button type="submit">Надіслати</button>
+            </form>
+
+            <div id="form-message"></div>
+
             <div>
               <a href="mailto:achupylko@gmail.com">achupylko@gmail.com</a> |
               <a href="https://github.com/achupylko" target="_blank">GitHub</a>
