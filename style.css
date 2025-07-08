@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1080px;
+    min-width: 480px;
     margin: 0 auto;
 }
 
@@ -93,4 +94,14 @@ footer {
   background-color: #f8f8f8;
   color: #333;
   font-size: 0.9rem;
+}
+
+.badge {
+    font-style: italic;
+}
+
+@media screen and (max-width: 750px) {
+  .hero-image {
+    display: none;
+  }
 }
