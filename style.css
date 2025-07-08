@@ -1,0 +1,96 @@
+.inter-title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-subtitle {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.inter-text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(191, 191, 191);
+    border: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+}
+
+nav > a {
+    margin: 0 0.5rem;
+}
+
+.main-section {
+    margin: 10px;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-image {
+    max-width: 25%;
+    margin: 0 0.5rem;
+}
+
+.hero-image > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    aspect-ratio: 3/4;
+}
+
+.hero-description {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 0.9rem;
+}

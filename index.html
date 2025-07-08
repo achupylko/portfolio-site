@@ -5,124 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#">Головна</a>
-      <a href="#">Проекти</a>
-      <a href="#">Про мене</a>
-      <a href="#">Контакти</a>
-    </nav>
-    <main>
-      <section id="hero">
-        <div class="container">
-          <img src="./assets/photo.jpg" alt="Photo" class="photo" />
-          <h1>Привіт, я Артем 👋</h1>
-          <p>
-            Початківець Full Stack розробник. Вивчаю HTML, CSS, JavaScript,
-            Python, React і Django. Створюю навчальні проєкти, щоб розвиватися в
-            ІТ.
-          </p>
-        </div>
-      </section>
-      <section id="projects">
-        <div class="container">
-          <h2>Мої проєкти</h2>
-
-          <div class="project">
-            <h3>Сайт-портфоліо</h3>
-            <p>
-              Статичний сайт із секціями про мене, проєктами та контактами.
-              Створено за допомогою HTML, CSS та JavaScript.
-            </p>
-            <a
-              href="https://github.com/achupylko/portfolio-site"
-              target="_blank"
-              >Переглянути код</a
-            >
+    <div class="main-container inter-text">
+      <nav>
+        <a href="#">Головна</a>
+        <a href="#">Проекти</a>
+        <a href="#">Про мене</a>
+        <a href="#">Контакти</a>
+      </nav>
+      <main>
+        <section id="hero" class="main-section">
+          <div class="hero-container">
+            <div class="hero-image">
+              <img src="./assets/photo.jpg" alt="Photo" class="photo" />
+            </div>
+            <div class="hero-description">
+              <h1 class="inter-title">Привіт, я Артем 👋</h1>
+              <p>
+                Початківець Full Stack розробник. Вивчаю HTML, CSS, JavaScript,
+                Python, React і Django. Створюю навчальні проєкти, щоб
+                розвиватися в ІТ.
+              </p>
+            </div>
           </div>
+        </section>
+        <hr />
+        <section id="projects" class="main-section">
+          <div class="projects-container">
+            <h2 class="inter-title">Мої проєкти</h2>
 
-          <div class="project">
-            <h3>Суші-ресторан (у розробці)</h3>
-            <p>
-              Веб-застосунок для онлайн-замовлень суші. Стек: React + Django +
-              PostgreSQL + Telegram Bot.
-            </p>
-            <span class="badge">Скоро</span>
-          </div>
-
-          <div class="project">
-            <h3>Автоматизація Excel звітів (майбутній проєкт)</h3>
-            <p>
-              Скрипти на Python для обробки CSV-файлів з торгової системи та
-              створення зведених звітів.
-            </p>
-            <span class="badge">Планується</span>
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <div class="container">
-          <h2>Про мене</h2>
-          <p>
-            Я Артем, початківець розробник з України. Активно навчаюся Full
-            Stack розробці з фокусом на реальні проєкти. Пройшов курси CS50x,
-            CS50w, вивчаю Git, Docker, DevOps-практики.
-          </p>
-
-          <h3>Мої навички:</h3>
-          <ul>
-            <li>
-              <strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap,
-              TailwindCSS, React
-            </li>
-            <li><strong>Backend:</strong> Python, Flask, Django, PostgreSQL</li>
-            <li>
-              <strong>Інструменти:</strong> Git, GitHub, Docker, VS Code, Linux
-              (WSL)
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="container">
-          <h2>Зв’язатися зі мною</h2>
-          <p>Хочеш співпрацювати або маєш запитання? Напиши мені 👇</p>
-
-          <!-- Форма (опціонально) -->
-          <form
-            action="mailto:your@email.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <input type="text" name="name" placeholder="Ваше ім’я" required />
-            <input type="email" name="email" placeholder="Ваш Email" required />
-            <textarea
-              name="message"
-              placeholder="Ваше повідомлення..."
-              required
-            ></textarea>
-            <button type="submit">Надіслати</button>
-          </form>
-
-          <!-- Або соцмережі -->
-          <p>Або знайди мене тут:</p>
-          <ul class="social-links">
-            <li>
-              <a href="https://github.com/yourusername" target="_blank"
-                >GitHub</a
+            <div class="project">
+              <h3 class="inter-subtitle">Сайт-портфоліо</h3>
+              <p>
+                Статичний сайт із секціями про мене, проєктами та контактами.
+                Створено за допомогою HTML, CSS та JavaScript.
+              </p>
+              <a
+                href="https://github.com/achupylko/portfolio-site"
+                target="_blank"
+                >Переглянути код</a
               >
-            </li>
-            <li>
-              <a href="https://t.me/yourtelegram" target="_blank">Telegram</a>
-            </li>
-            <li><a href="mailto:your@email.com">Email</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div></div>
-    </footer>
+            </div>
+
+            <div class="project">
+              <h3 class="inter-subtitle">Суші-ресторан (у розробці)</h3>
+              <p>
+                Веб-застосунок для онлайн-замовлень суші. Стек: React + Django +
+                PostgreSQL + Telegram Bot.
+              </p>
+              <span class="badge">Скоро</span>
+            </div>
+
+            <div class="project">
+              <h3 class="inter-subtitle">
+                Автоматизація Excel звітів (майбутній проєкт)
+              </h3>
+              <p>
+                Скрипти на Python для обробки CSV-файлів з торгової системи та
+                створення зведених звітів.
+              </p>
+              <span class="badge">Планується</span>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section id="about" class="main-section">
+          <div class="about-container">
+            <h2 class="inter-title">Про мене</h2>
+            <p>
+              Я Артем, початківець розробник з України. Активно навчаюся Full
+              Stack розробці з фокусом на реальні проєкти. Пройшов курси CS50x,
+              CS50w, вивчаю Git, Docker, DevOps-практики.
+            </p>
+
+            <h3 class="inter-subtitle">Мої навички:</h3>
+            <ul>
+              <li>
+                <strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap,
+                TailwindCSS, React
+              </li>
+              <li>
+                <strong>Backend:</strong> Python, Flask, Django, PostgreSQL
+              </li>
+              <li>
+                <strong>Інструменти:</strong> Git, GitHub, Docker, VS Code,
+                Linux (WSL)
+              </li>
+            </ul>
+          </div>
+        </section>
+        <hr />
+        <section id="contact" class="main-section">
+          <div class="contact-container">
+            <h2 class="inter-title">Зв’язатися зі мною</h2>
+            <p>Хочеш співпрацювати або маєш запитання? Напиши мені 👇</p>
+            <div>
+              <a href="mailto:achupylko@gmail.com">achupylko@gmail.com</a> |
+              <a href="https://github.com/achupylko" target="_blank">GitHub</a>
+              |
+              <a href="https://t.me/achupylko" target="_blank">Telegram</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>© 2025 Артем Чупилко. Всі права захищені.</p>
+      </footer>
+    </div>
   </body>
 </html>
