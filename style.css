@@ -151,3 +151,8 @@ button:hover {
   margin-top: 0.5rem;
   font-weight: bold;
 }
+
+#form-message {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
