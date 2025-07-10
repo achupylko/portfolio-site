@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             showMessage("Надсилаю...", "blue");
-            const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            const response = await fetch("http://localhost:5000/api/contact", {
                 method: "POST",
                 body: JSON.stringify({ name, email, message }),
                 headers: {
@@ -24,12 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
             });
 
-            if (!response.ok) throw new Error("Щось пішло не так");
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error?.error || "Помилка при надсиланні.");
+            }
 
-            showMessage("Повідомлення успішно надіслано!", "green");
+            const result = await response.json();
+            showMessage(result.message || "Успішно!", "green");
             form.reset();
         } catch (err) {
-            showMessage("Помилка при надсиланні. Спробуй пізніше.", "red");
+            showMessage(err.message || "Щось пішло не так...", "red");
         }
     });
 
