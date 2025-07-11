@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             showMessage("Надсилаю...", "blue");
-            const response = await fetch("http://localhost:5000/api/contact", {
+            const response = await fetch("https://flask-api-fq0z.onrender.com/api/contact", {
                 method: "POST",
                 body: JSON.stringify({ name, email, message }),
                 headers: {
